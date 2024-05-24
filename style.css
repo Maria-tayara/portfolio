@@ -1,0 +1,310 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: black;
+}
+
+/* start_home */
+.home-s{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(50deg, black 70% ,#f00d52 30%);
+}
+/* nav */
+#logo{
+    font-size: 30px;
+    margin-left: 10px;
+    color: #f00d52;
+}
+.navbar-nav{
+    margin-left: 50px;
+    margin-top: 6px;
+}
+.nav-item .nav-link {
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+    transition: 1s ease;
+}
+.nav-item .nav-link:hover{
+    color:#f00d52;
+    border-bottom:2px solid #f00d52;
+
+}
+#btn{
+    background: transparent;
+    border: 2px solid;
+    padding: 10px;
+}
+@media(max-width:991px) {
+#btn{
+    background: transparent;
+    border: 2px solid white;
+    padding: 10px;
+    color: white;
+    margin-left: 50px;
+} 
+}
+/* nav */
+/* content */
+.home{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+
+
+}
+.home img {
+    width: 400px;
+    border-radius:50%;
+    margin: 40px;
+}
+@media(max-width:991px){
+.home img {
+    display: none;
+}
+}
+
+
+.home .content{
+    margin: 50px;
+    font-size: 20px;
+}
+
+.home .content h3{
+    color: #f00d52;
+}
+
+.home .content .change::after{
+    content: "";
+    animation: change 10s infinite linear;
+    color: #de4a77;
+    font-size: 40px;
+}
+.content #btn1{
+    width: 120px;
+    border: none;
+    font-family: sans-serif;
+    background-color: #f00d52;
+    color: white;
+}
+@keyframes change{
+    0%{
+        content: "web developer";
+        text-transform: capitalize;
+    }
+    25%{
+        content: "frontend developer ";
+        text-transform: capitalize;
+    }
+    50%{
+        content: "  ui-ux designer ";
+        text-transform: capitalize;
+    }
+    75%{
+        content: "frontend developer ";
+        text-transform: capitalize;
+    }
+    100%{
+        content: " developer ";
+        text-transform: capitalize;
+    }
+}
+@media(max-width:450px) {
+    .home-s{
+        background: black;
+    }
+    
+}
+
+/* content */
+/* end_home */
+/* start_about */
+#about{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-color: black;
+}
+#about h3{
+    width: 150px;
+    border-bottom: 2px solid #f00d52;
+
+
+}
+
+#about h2 span{
+    color: #f00d52;
+    font-size: 20px;
+}
+#about h2{
+    font-size: 25px;
+    margin-top: 20px;
+}
+#about #btn2{
+    width: 150px;
+    border: 2px solid #f00d52;
+    font-family: sans-serif;
+    background:transparent;
+    color: white;
+
+}
+.card p{
+    font-size: 25px;
+} 
+@media(max-width:767px) {
+    #about{
+        height:200vh;
+    }
+    
+}
+@media(max-width:500px) {
+    #about{
+        height:125vh;
+    }
+    
+}
+
+/*end_about */
+
+
+/* start_services */
+
+#services{
+    width: 100%;
+    height: 100vh;
+    
+}
+#services .container h1{
+    border-bottom: 2px solid #f00d52;
+    color: white;
+    font-weight: normal;
+}
+#services .card{
+    background-color: #f00d52;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+}
+#services .card i{
+    font-size:42px;
+    text-align: center;
+}
+#services .card:hover{
+    transform: scale(1.1);
+    transition: 1s ease;
+    background-color: rgb(0, 56, 134);
+}
+
+@media(max-width:767px) {
+    #services{
+        height:200vh;
+    }
+    
+}
+@media(max-width:500px) {
+    #services{
+        height:150vh;
+    }
+    
+}
+/* end_services */
+
+
+
+
+/*start_portfolio */
+#portfolio{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    text-transform: capitalize;
+}
+#portfolio h1{
+    border-bottom: 2px solid #f00d52;
+    display: inline;
+    font-weight: normal;
+}
+#portfolio p{
+    font-size: 40px;
+}
+@media(max-width:800px) {
+    #portfolio{
+        height:350vh;
+    }
+    
+}
+@media(max-width:500px) {
+    #portfolio{
+        height:225vh;
+    }
+   
+}
+/* end_portfolio */
+/* start_contact */
+#contact{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    font-size: 20px;
+    
+}
+#contact h1{
+    border-bottom: 2px solid #f00d52;
+    display: inline;
+
+}
+#contact .social-links{
+    font-size: 40px;
+}
+#info span{
+    font-size: 20px;
+}
+#contact .row input{
+    background: transparent;
+    border: 2px solid #f00d52;
+    height: 50px;
+    color: white;
+}
+#btncontact{
+    width: 120px;
+    border: none;
+    font-family: sans-serif;
+    background-color: #f00d52;
+    color: white;
+    height: 50px;
+
+}
+textarea{
+    background: transparent;
+    border: 2px solid #f00d52;
+    height: 50px;
+    width: ;
+    color: white;
+}
+#btncontact:hover{
+    background-color: #de4a77;
+}
+@media(max-width:800px) {
+    #contact{
+        height:150vh;
+    }
+    
+}
+
+/* end_contact */
+/* start_footer */
+.footer{
+    background: #da7f9a;
+    color: black;
+    width: 100%;
+    height: 25vh;
+}
+
+/* end_footer */
